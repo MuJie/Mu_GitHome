@@ -11,7 +11,7 @@
 配置fetch信息
 	> **注意：**使用depth参数会导致 **查看不了远程分支**，是因为没有fetch过来。用 git fetch命令无效的情况下，是因为fetch配置路径不对，配置**上面命令**可解决。但关联的是所有分支信息，迭代次数多的情况下，可能会达到几G大小，显然没必要；只想关联想要的分支信息，每次修改fetch配置就可以。对应的**星号**改成**远程分支名称**。如：`git config remote.origin.fetch "+refs/heads/分支名:refs/remotes/origin/分支名`  
 	
-- `git config -- get remote.origin.fetch` 
+- `git config -- get remote.origin.fetch`  
 查看fetch配置信息  
 
 - ```git status```  
